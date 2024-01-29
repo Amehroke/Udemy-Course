@@ -1,0 +1,7 @@
+[ p*3>lorem ] this creates 3 paragraphs of dummy text with <p> tag </p> 
+
+h${heading $}*6 shourtcut to create headings
+
+[h1.pagetitle] this creates a h1 tag with a class of pagetitle
+
+"https://source.unsplash.com/random/?code" is a random image generator. It generates random images based on the code.
