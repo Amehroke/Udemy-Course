@@ -1,0 +1,11 @@
+a{
+    color: green;
+}
+
+.container a{
+    color: red;
+}
+
+.container p a{
+    color: orange;
+}

@@ -1,0 +1,21 @@
+.main-heading{
+    color: darkcyan;
+}
+
+.sub-heading{
+    color: cadetblue;
+}
+
+.article-box{
+    background-color: chocolate;
+}
+
+.article-heading{
+    color: red;
+    font-style: italic;
+}
+
+#container{
+    background-color: #3cabff;
+    border: 2px solid #000;
+}    
