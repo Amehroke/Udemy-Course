@@ -1,0 +1,18 @@
+.box{
+    width: 500px;
+    height: 500px;
+    margin:auto;
+    background-color: darkcyan;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.box-item{
+    width: 100px;
+    /* height: 100px; */
+    background-color: cyan;
+    border: 1px solid black;
+}
+
+/* We can use the stretch property to stretch the content for each item*/

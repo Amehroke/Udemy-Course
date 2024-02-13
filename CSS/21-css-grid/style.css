@@ -1,0 +1,19 @@
+.box{
+    width:300px;
+    background-color: darkblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr;
+    gap: 10px;
+}
+/* grid-template-columns: determines the number of columns */
+/* grid-template-rows: determines the number of rows */
+/* fr unit stands for fraction of total container space */
+/* gap is the space between items */
+
+
+.box-item{
+    padding: 15px;
+    background-color: cyan;
+    border: 1px solid black;
+}

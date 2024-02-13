@@ -1,0 +1,27 @@
+.box{
+    width: 500px;
+    height: 500px;
+    margin:auto;
+    background-color: darkcyan;
+    display: flex;
+    /* Only works for horizontal axis */
+    /* justify-content: start; */
+    /* justify-content: center; */
+    /* justify-content: end; */
+
+    /* Works for the vertical axis */
+    /* align-items: start; */
+    /* align-items: center;  */
+    /* align-items: end; */
+    
+    /* To center the item use both properties */
+    justify-content: center;
+    align-items: center;
+}
+
+.box-item{
+    width: 100px;
+    height: 100px;
+    background-color: cyan;
+    border: 1px solid black;
+}

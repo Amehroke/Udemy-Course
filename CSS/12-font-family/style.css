@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "myFirstFont";
+    src: url(Fonts/Quicksand-VariableFont_wght.ttf);
+}
+
+*{
+    font-family: "myFirstFont";
+}
+/* You can use google fonts to find the font you like   */

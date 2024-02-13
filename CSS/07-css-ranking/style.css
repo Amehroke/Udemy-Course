@@ -1,0 +1,32 @@
+
+/* ID selector */
+#example{
+    color: dimgray;
+}
+
+/* Class selector */
+.example{
+    color: darkturquoise;
+}
+
+/* Type selector */
+section{
+    color: crimson;
+}
+
+p{
+    color: darkcyan;
+}
+
+h1{
+    color: darkorange;
+}
+
+/* Universal selector */
+*{
+    color: darkgoldenrod;
+}
+
+
+
+
