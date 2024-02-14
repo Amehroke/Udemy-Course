@@ -1,0 +1,19 @@
+
+/* This does not work, for the following html */
+/* p:first-child{
+    color: red;
+}
+
+p:last-child{
+    color: blue;
+} */
+
+/* This only works with firs-of-type property */
+
+p:first-of-type{
+    color: red;
+}
+
+p:last-of-type{
+    color: blue;
+}
