@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="A simple Web Page">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+    <body>
+        <div class="container">
+            <!-- Main Header -->
+            <header class="main-header">
+                <!-- logo holder -->
+                <div class="logo-holder">
+                    <a href="#">
+                        <img src="img/Logo.png" width ="50px" ="Logo">
+                    </a>
+                </div>
+                <!-- logo holder -->
+                <!-- Search Bar  -->
+                <div class="search-holder">
+                    <form action="" method="get">
+                        <input type="search" name="s" placeholder="Search for..">
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+                <!-- Search Bar  -->
+            </header>
+            <!-- Main Header -->
+
+            <!-- Main Menu -->
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Product 1</a></li>
+                            <li><a href="#">Product 2</a></li>
+                            <li><a href="#">Product 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- Main Menu -->
+
+            <!-- Product holder -->
+            <section class="services-holder">
+                <article class="product">
+                    <h3>Product 1</h3>
+                    <img src="https://placehold.co/600x315" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos.</p>
+                    <a href="#">Read More</a>
+                </article>
+                <article class="product">
+                    <h3>Product 2</h3>
+                    <img src="https://placehold.co/600x315" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos.</p>
+                    <a href="#">Read More</a>
+                </article>
+                <article class="product">
+                    <h3>Product 3</h3>
+                    <img src="https://placehold.co/600x315" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos.</p>
+                    <a href="#">Read More</a>
+                </article>
+                </article>
+                <article class="product">
+                    <img src="https://placehold.co/600x315" alt="">
+                    <h3>Product 4</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos.</p>
+                    <a href="#">Read More</a>
+                </article>
+                <article class="product">
+                    <img src="https://placehold.co/600x315" alt="">
+                    <h3>Product 5</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos.</p>
+                    <a href="#">Read More</a>
+                </article>
+                <article class="product">
+                    <img src="https://placehold.co/600x315" alt="">
+                    <h3>Product 6</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos.</p>
+                    <a href="#">Read More</a>
+                </article>
+            </section>        
+            <!-- Product holder -->
+
+            <!-- Footer Widgets -->
+            <section class="footer-widget-holder">
+                <div class="footer-widget">
+                    <a href="#">
+                        <img src="img/Logo.png" width="50px" alt="Logo">
+                        <h3>Address</h3>
+                        <address>
+                            123, Street Name, City Name, Country Name
+                        </address>
+                    </a>
+                </div>
+
+                <div class="footer-widget">
+                    <h4>Sitemap</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-widget">
+                    <h4>Sitemap</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-widget">
+                    <h4>Sitemap</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Footer Widgets -->
+
+            <!-- Site Footer -->
+            <footer class="site-footer">
+                <p><small>Copyright &copy; 2025</small></p>
+            </footer>
+            <!-- Site Footer -->
+
+        </div>
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('#adaptive').lightSlider({
+                    adaptiveHeight:true,
+                    item:1,
+                    slideMargin:0,
+                    loop:true
+                });
+            });
+        </script>
+   
+    </body>
+</html>
