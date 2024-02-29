@@ -92,10 +92,6 @@ body{
     margin-top: -25px !important;
 }
 
-#adaptive img{
-    width: 100%;
-}
-
 .content-holder{
     display: flex;
     justify-content: space-between;
@@ -281,6 +277,27 @@ body{
     .dropdown > li > a { 
         display: block;
         width: auto;
+    }
+
+    #adaptive img{
+        width: 100%;
+    }
+
+    .content-holder{
+        flex-direction: column;
+    }
+
+    .content-holder .content, 
+    .content-holder .sidebar{
+        width: auto;
+    }
+
+    .footer-widget-holder{ 
+        flex-direction: column;
+    }
+
+    .footer-widget-holder .footer-widget{ 
+        padding: 10px 25px;
     }
 
 }
