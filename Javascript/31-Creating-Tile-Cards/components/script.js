@@ -4,7 +4,7 @@ import computerObjectArray from "./data.js";
 const content =  computerObjectArray.map( (computer) => {
 
     let computerArticle = document.createElement("article");
-    computerArticle.classList.add("computer");
+    computerArticle.classList.add("computer"); //
 
     computerArticle.setAttribute("id", computer.id);
 

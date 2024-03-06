@@ -27,3 +27,4 @@ const laptop = new Computer(
 const computerObjectArray = [desktop, laptop];
 
 export default computerObjectArray;
+
