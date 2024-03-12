@@ -12,3 +12,17 @@ document.getElementById("location-input").addEventListener('change', async () =>
     
 
 }); 
+
+const getWeatherData = async (location) => {
+    if(!location){
+        return; 
+    }
+
+    const apiKey = 'ApiKey' //Enter your API key here
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}`);
+
+    const data = await response.json();
+
+    return data;
+}   
+
