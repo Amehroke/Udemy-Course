@@ -26,3 +26,21 @@ const getWeatherData = async (location) => {
     return data;
 }   
 
+function getBackgroundColor(temperature){
+    if(temperature < 0){ 
+        return 'lightblue';
+    }
+    else if(temperature < 10){
+        return 'lightgreen';
+    }
+    else if(temperature < 20){
+        return 'lightyellow';
+    }
+    else if(temperature < 30){
+        return 'lightorange';
+    }
+    else{
+        return 'lightred';
+    }
+    
+}
