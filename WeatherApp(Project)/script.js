@@ -18,7 +18,7 @@ const getWeatherData = async (location) => {
         return; 
     }
 
-    const apiKey = 'ApiKey' //Enter your API key here
+    const apiKey = 'effef69b2b1f9a7cd98cb5b96b7adff7' //Enter your API key here
     const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}`);
 
     const data = await response.json();
@@ -27,17 +27,14 @@ const getWeatherData = async (location) => {
 }   
 
 function getBackgroundColor(temperature){
-    if(temperature < 0){ 
+    if(temperature <= 40){ 
+        return 'blue';
+    }
+    else if(temperature <= 70){
         return 'lightblue';
     }
-    else if(temperature < 10){
+    else if(temperature <= 80){
         return 'lightgreen';
-    }
-    else if(temperature < 20){
-        return 'lightyellow';
-    }
-    else if(temperature < 30){
-        return 'lightorange';
     }
     else{
         return 'lightred';
@@ -48,17 +45,19 @@ function getBackgroundColor(temperature){
 const displayWeatherData = (data) => {
     const weatherDataElement = document.getElementById("weather-data");
 
-    if(Object.keys(data).length === 0){
-        weatherDataElement.innerHTML = "Please enter a valid location";
+    if (!data || data.error) { // Check if data is undefined or if an error occurred
+        weatherDataElement.innerHTML = "Please Enter a Location";
         return;
     }
     else{ 
-        const backgroundColor = getBackgroundColor(Math.floor(data.main.temp - 273.15));
+        const temp = Math.floor(((data.main.temp - 273.15) * 1.8 + 32 )); 
+        const backgroundColor = getBackgroundColor(temp);
+
         weatherDataElement.style.backgroundColor = backgroundColor;
 
         weatherDataElement.innerHTML = `
             <h2>Weather in ${data.name}</h2>
-            <p>Temperature: ${Math.floor(data.main.temp - 273.15)}°C</p>
+            <p>Temperature: ${temp}°F</p>
             <p>Humidity: ${data.main.humidity}%</p>
             <p>Wind Speed: ${data.wind.speed}m/s</p>
         `;  
