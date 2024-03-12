@@ -42,5 +42,30 @@ function getBackgroundColor(temperature){
     else{
         return 'lightred';
     }
-    
+}
+
+
+const displayWeatherData = (data) => {
+    const weatherDataElement = document.getElementById("weather-data");
+
+    if(Object.keys(data).length === 0){
+        weatherDataElement.innerHTML = "Please enter a valid location";
+        return;
+    }
+    else{ 
+        const backgroundColor = getBackgroundColor(Math.floor(data.main.temp - 273.15));
+        weatherDataElement.style.backgroundColor = backgroundColor;
+
+        weatherDataElement.innerHTML = `
+            <h2>Weather in ${data.name}</h2>
+            <p>Temperature: ${Math.floor(data.main.temp - 273.15)}°C</p>
+            <p>Humidity: ${data.main.humidity}%</p>
+            <p>Wind Speed: ${data.wind.speed}m/s</p>
+        `;  
+    }
+}
+
+window.onload = async () => {
+    weatherData = await getWeatherData(); 
+    displayWeatherData(weatherData);
 }
