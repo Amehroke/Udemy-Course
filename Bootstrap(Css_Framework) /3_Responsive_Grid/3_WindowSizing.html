@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+    <body>
+        
+        <h1>Hello, Deep</h1>
+        <!-- Basic layout for a grid of rows and columns wrapped in a container from bootstrap -->
+        <div class="container">
+            <div class="row">
+
+              <!-- -md (Medium) is added to set a window breakpoint to render just 1 row of divs if the breakpoint is entered -->
+              <!-- 3: This indicates that the column should take up 3 of the available 12 column-widths in the grid for 
+                    medium devices and larger. Essentially, this means the column will occupy 25% (since 3/12 = 0.25) -->
+
+                <!-- Adding another col-sm-4 to it sets the sizing for sm (small) viewpoint break-->
+                <!-- It will be 12/3 = 4 cols in medium view and 12/4 = 3 cols in small view -->
+                <div class="col-md-3 col-sm-4">
+                    <!-- mb-3 = margin-bottom 3% of container  -->
+                    <div class="bg-primary text-white text-center p-3 mb-3">
+                        columns
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <div class="bg-primary text-white text-center p-3 mb-3">
+                        columns
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <div class="bg-primary text-white text-center p-3 mb-3">
+                        columns
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <div class="bg-primary text-white text-center p-3 mb-3">
+                        columns
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>
