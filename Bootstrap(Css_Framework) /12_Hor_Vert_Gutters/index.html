@@ -15,14 +15,12 @@
         
         <h1>Hello, Deep</h1>
         <!-- gutters is the padding and gaps between columns  -->
+        <!-- g-5 is the gutter sizing on all sides  -->
 
-        <!-- gy-5 is the vertical gutters -->
-        <!-- overflow-hidden is used to not let the rows overflow the container -->
-
-        <!-- can adjust it from gy-0 to gy-5 -->
+        <!-- Guttersizes can also be adjusted with breakpoints  -->
 
         <div class="container bg-info mt-5 overflow-hidden">
-            <div class="row mb-3 bg-warning gy-5">
+            <div class="row mb-3 bg-warning g-5">
                 <div class="col-6">
                     <div class="bg-primary p-3 text-white">
                         Coulmns
@@ -49,6 +47,37 @@
             </div>
             
         </div>
+
+        <!-- with breakpoints medium and small  -->
+        <div class="container bg-info mt-5 overflow-hidden">
+            <div class="row mb-3 bg-warning g-md-5 g-sm-2">
+                <div class="col-6">
+                    <div class="bg-primary p-3 text-white">
+                        Coulmns
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="bg-primary p-3 text-white">
+                        Coulmns
+                    </div>
+                </div>
+            
+                <div class="col-6">
+                    <div class="bg-primary p-3 text-white">
+                        Coulmns
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="bg-primary p-3 text-white">
+                        Coulmns
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
     </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </html>
